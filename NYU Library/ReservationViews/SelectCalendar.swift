@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct SelectCalendar: View {
+    @State var date = Date()
     var body: some View {
-        Text("")
+        Form {
+            DatePicker("date", selection: $date)
+            Text(date.description)
+        }
     }
 }
 

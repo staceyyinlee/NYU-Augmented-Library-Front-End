@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    var themeColor = Color("purpleNYU")
     var body: some View {
         
         TabView {
@@ -22,18 +22,19 @@ struct ContentView: View {
                     icon("safari", "Tour")
                 }
 
-            Text("")
+            SelectCalendar()
                 .tabItem {
                     icon("calendar", "Calendar")
                 }
         }
+        .accentColor(themeColor)
     }
 }
 
 extension ContentView {
     func icon(_ name: String, _ label: String) -> some View {
         VStack {
-            Image(systemName: name)
+            Image(systemName: name).renderingMode(.template)
             Text(label)
         }
     }
