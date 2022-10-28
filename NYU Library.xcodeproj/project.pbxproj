@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FF58CD1290C83D2003B4355 /* NYU_LibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CD0290C83D2003B4355 /* NYU_LibraryApp.swift */; };
+		3FF58CD3290C83D2003B4355 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CD2290C83D2003B4355 /* ContentView.swift */; };
+		3FF58CD5290C83D8003B4355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF58CD4290C83D8003B4355 /* Assets.xcassets */; };
+		3FF58CD8290C83D8003B4355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF58CD7290C83D8003B4355 /* Preview Assets.xcassets */; };
+		3FF58CE2290C83D8003B4355 /* NYU_LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CE1290C83D8003B4355 /* NYU_LibraryTests.swift */; };
+		3FF58CEC290C83D8003B4355 /* NYU_LibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CEB290C83D8003B4355 /* NYU_LibraryUITests.swift */; };
+		3FF58CEE290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CED290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FF58CDE290C83D8003B4355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF58CC5290C83D2003B4355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF58CCC290C83D2003B4355;
+			remoteInfo = "NYU Library";
+		};
+		3FF58CE8290C83D8003B4355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF58CC5290C83D2003B4355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF58CCC290C83D2003B4355;
+			remoteInfo = "NYU Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FF58CCD290C83D2003B4355 /* NYU Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYU Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF58CD0290C83D2003B4355 /* NYU_LibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYU_LibraryApp.swift; sourceTree = "<group>"; };
+		3FF58CD2290C83D2003B4355 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FF58CD4290C83D8003B4355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FF58CD7290C83D8003B4355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FF58CDD290C83D8003B4355 /* NYU LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYU LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF58CE1290C83D8003B4355 /* NYU_LibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYU_LibraryTests.swift; sourceTree = "<group>"; };
+		3FF58CE7290C83D8003B4355 /* NYU LibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYU LibraryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF58CEB290C83D8003B4355 /* NYU_LibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYU_LibraryUITests.swift; sourceTree = "<group>"; };
+		3FF58CED290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYU_LibraryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FF58CCA290C83D2003B4355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF58CDA290C83D8003B4355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF58CE4290C83D8003B4355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FF58CC4290C83D2003B4355 = {
+			isa = PBXGroup;
+			children = (
+				3FF58CCF290C83D2003B4355 /* NYU Library */,
+				3FF58CE0290C83D8003B4355 /* NYU LibraryTests */,
+				3FF58CEA290C83D8003B4355 /* NYU LibraryUITests */,
+				3FF58CCE290C83D2003B4355 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FF58CCE290C83D2003B4355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FF58CCD290C83D2003B4355 /* NYU Library.app */,
+				3FF58CDD290C83D8003B4355 /* NYU LibraryTests.xctest */,
+				3FF58CE7290C83D8003B4355 /* NYU LibraryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FF58CCF290C83D2003B4355 /* NYU Library */ = {
+			isa = PBXGroup;
+			children = (
+				3FF58CD0290C83D2003B4355 /* NYU_LibraryApp.swift */,
+				3FF58CD2290C83D2003B4355 /* ContentView.swift */,
+				3FF58CD4290C83D8003B4355 /* Assets.xcassets */,
+				3FF58CD6290C83D8003B4355 /* Preview Content */,
+			);
+			path = "NYU Library";
+			sourceTree = "<group>";
+		};
+		3FF58CD6290C83D8003B4355 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FF58CD7290C83D8003B4355 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FF58CE0290C83D8003B4355 /* NYU LibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FF58CE1290C83D8003B4355 /* NYU_LibraryTests.swift */,
+			);
+			path = "NYU LibraryTests";
+			sourceTree = "<group>";
+		};
+		3FF58CEA290C83D8003B4355 /* NYU LibraryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FF58CEB290C83D8003B4355 /* NYU_LibraryUITests.swift */,
+				3FF58CED290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift */,
+			);
+			path = "NYU LibraryUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FF58CCC290C83D2003B4355 /* NYU Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF58CF1290C83D8003B4355 /* Build configuration list for PBXNativeTarget "NYU Library" */;
+			buildPhases = (
+				3FF58CC9290C83D2003B4355 /* Sources */,
+				3FF58CCA290C83D2003B4355 /* Frameworks */,
+				3FF58CCB290C83D2003B4355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYU Library";
+			productName = "NYU Library";
+			productReference = 3FF58CCD290C83D2003B4355 /* NYU Library.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FF58CDC290C83D8003B4355 /* NYU LibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF58CF4290C83D8003B4355 /* Build configuration list for PBXNativeTarget "NYU LibraryTests" */;
+			buildPhases = (
+				3FF58CD9290C83D8003B4355 /* Sources */,
+				3FF58CDA290C83D8003B4355 /* Frameworks */,
+				3FF58CDB290C83D8003B4355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF58CDF290C83D8003B4355 /* PBXTargetDependency */,
+			);
+			name = "NYU LibraryTests";
+			productName = "NYU LibraryTests";
+			productReference = 3FF58CDD290C83D8003B4355 /* NYU LibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FF58CE6290C83D8003B4355 /* NYU LibraryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF58CF7290C83D8003B4355 /* Build configuration list for PBXNativeTarget "NYU LibraryUITests" */;
+			buildPhases = (
+				3FF58CE3290C83D8003B4355 /* Sources */,
+				3FF58CE4290C83D8003B4355 /* Frameworks */,
+				3FF58CE5290C83D8003B4355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF58CE9290C83D8003B4355 /* PBXTargetDependency */,
+			);
+			name = "NYU LibraryUITests";
+			productName = "NYU LibraryUITests";
+			productReference = 3FF58CE7290C83D8003B4355 /* NYU LibraryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FF58CC5290C83D2003B4355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3FF58CCC290C83D2003B4355 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					3FF58CDC290C83D8003B4355 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3FF58CCC290C83D2003B4355;
+					};
+					3FF58CE6290C83D8003B4355 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3FF58CCC290C83D2003B4355;
+					};
+				};
+			};
+			buildConfigurationList = 3FF58CC8290C83D2003B4355 /* Build configuration list for PBXProject "NYU Library" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FF58CC4290C83D2003B4355;
+			productRefGroup = 3FF58CCE290C83D2003B4355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FF58CCC290C83D2003B4355 /* NYU Library */,
+				3FF58CDC290C83D8003B4355 /* NYU LibraryTests */,
+				3FF58CE6290C83D8003B4355 /* NYU LibraryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FF58CCB290C83D2003B4355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF58CD8290C83D8003B4355 /* Preview Assets.xcassets in Resources */,
+				3FF58CD5290C83D8003B4355 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF58CDB290C83D8003B4355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF58CE5290C83D8003B4355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FF58CC9290C83D2003B4355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF58CD3290C83D2003B4355 /* ContentView.swift in Sources */,
+				3FF58CD1290C83D2003B4355 /* NYU_LibraryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF58CD9290C83D8003B4355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF58CE2290C83D8003B4355 /* NYU_LibraryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF58CE3290C83D8003B4355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF58CEC290C83D8003B4355 /* NYU_LibraryUITests.swift in Sources */,
+				3FF58CEE290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FF58CDF290C83D8003B4355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF58CCC290C83D2003B4355 /* NYU Library */;
+			targetProxy = 3FF58CDE290C83D8003B4355 /* PBXContainerItemProxy */;
+		};
+		3FF58CE9290C83D8003B4355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF58CCC290C83D2003B4355 /* NYU Library */;
+			targetProxy = 3FF58CE8290C83D8003B4355 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FF58CEF290C83D8003B4355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FF58CF0290C83D8003B4355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FF58CF2290C83D8003B4355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NYU Library/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StaceyLee.NYU-Library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FF58CF3290C83D8003B4355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NYU Library/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StaceyLee.NYU-Library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FF58CF5290C83D8003B4355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StaceyLee.NYU-LibraryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYU Library.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NYU Library";
+			};
+			name = Debug;
+		};
+		3FF58CF6290C83D8003B4355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StaceyLee.NYU-LibraryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYU Library.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NYU Library";
+			};
+			name = Release;
+		};
+		3FF58CF8290C83D8003B4355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StaceyLee.NYU-LibraryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NYU Library";
+			};
+			name = Debug;
+		};
+		3FF58CF9290C83D8003B4355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StaceyLee.NYU-LibraryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NYU Library";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FF58CC8290C83D2003B4355 /* Build configuration list for PBXProject "NYU Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF58CEF290C83D8003B4355 /* Debug */,
+				3FF58CF0290C83D8003B4355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF58CF1290C83D8003B4355 /* Build configuration list for PBXNativeTarget "NYU Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF58CF2290C83D8003B4355 /* Debug */,
+				3FF58CF3290C83D8003B4355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF58CF4290C83D8003B4355 /* Build configuration list for PBXNativeTarget "NYU LibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF58CF5290C83D8003B4355 /* Debug */,
+				3FF58CF6290C83D8003B4355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF58CF7290C83D8003B4355 /* Build configuration list for PBXNativeTarget "NYU LibraryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF58CF8290C83D8003B4355 /* Debug */,
+				3FF58CF9290C83D8003B4355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FF58CC5290C83D2003B4355 /* Project object */;
+}
