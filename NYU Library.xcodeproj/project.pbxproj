@@ -14,6 +14,8 @@
 		3FF58CE2290C83D8003B4355 /* NYU_LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CE1290C83D8003B4355 /* NYU_LibraryTests.swift */; };
 		3FF58CEC290C83D8003B4355 /* NYU_LibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CEB290C83D8003B4355 /* NYU_LibraryUITests.swift */; };
 		3FF58CEE290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF58CED290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift */; };
+		416F88EE290C8FE000676AF5 /* SelectCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F88ED290C8FE000676AF5 /* SelectCalendar.swift */; };
+		416F88F3290C92E700676AF5 /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F88F2290C92E700676AF5 /* ReservationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		3FF58CE7290C83D8003B4355 /* NYU LibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYU LibraryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF58CEB290C83D8003B4355 /* NYU_LibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYU_LibraryUITests.swift; sourceTree = "<group>"; };
 		3FF58CED290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYU_LibraryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		416F88ED290C8FE000676AF5 /* SelectCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCalendar.swift; sourceTree = "<group>"; };
+		416F88F2290C92E700676AF5 /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,10 @@
 			children = (
 				3FF58CD0290C83D2003B4355 /* NYU_LibraryApp.swift */,
 				3FF58CD2290C83D2003B4355 /* ContentView.swift */,
+				416F88F1290C92D300676AF5 /* Model */,
+				416F88EF290C8FE300676AF5 /* ReservationViews */,
 				3FF58CD4290C83D8003B4355 /* Assets.xcassets */,
+				416F88F0290C90E900676AF5 /* New Group */,
 				3FF58CD6290C83D8003B4355 /* Preview Content */,
 			);
 			path = "NYU Library";
@@ -125,6 +132,29 @@
 				3FF58CED290C83D8003B4355 /* NYU_LibraryUITestsLaunchTests.swift */,
 			);
 			path = "NYU LibraryUITests";
+			sourceTree = "<group>";
+		};
+		416F88EF290C8FE300676AF5 /* ReservationViews */ = {
+			isa = PBXGroup;
+			children = (
+				416F88ED290C8FE000676AF5 /* SelectCalendar.swift */,
+			);
+			path = ReservationViews;
+			sourceTree = "<group>";
+		};
+		416F88F0290C90E900676AF5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		416F88F1290C92D300676AF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				416F88F2290C92E700676AF5 /* ReservationViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF58CD3290C83D2003B4355 /* ContentView.swift in Sources */,
+				416F88EE290C8FE000676AF5 /* SelectCalendar.swift in Sources */,
 				3FF58CD1290C83D2003B4355 /* NYU_LibraryApp.swift in Sources */,
+				416F88F3290C92E700676AF5 /* ReservationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
