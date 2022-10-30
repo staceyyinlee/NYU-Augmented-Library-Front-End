@@ -12,7 +12,14 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            ListView()
+            NavigationView {
+                VStack {
+                    ListView()
+                    NavigationLink("go") {
+                        ARTest1()
+                    }
+                }
+            }
                 .tabItem {
                     icon("house", "Home")
                 }

@@ -12,6 +12,7 @@ struct SelectCalendar: View {
     var body: some View {
         Form {
             DatePicker("date", selection: $date)
+                .datePickerStyle(.graphical)
             Text(date.description)
         }
     }
