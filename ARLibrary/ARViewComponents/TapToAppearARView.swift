@@ -93,6 +93,9 @@ extension TapToAppearViewContainer {
 
                 // ensure it will only render once
                 rendered = true
+            } else {
+                // make an alert that it did not work the first time, so tap again. 
+                
             }
             
         }
