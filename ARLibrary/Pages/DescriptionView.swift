@@ -12,6 +12,17 @@ struct DescriptionView: View {
     @State var isShowingMiniAR = false
     @State var isShowingImmersionAR = false
     
+    // preset texts
+    let miniature3DText = "Play With Miniature 3D Space"
+    let immersion3DText = "Immerse Youself in the 3D Space"
+    let miniatureInfoText = "You will see the 3D space as a miniature model that you can play around with. Try pinching, rotating, and moving the model around on the screen!"
+    let immersionInfoText = "Focus on a floor horizontal plane and tap. If it worked, you should see the 3D space enlarged. Immerse youself in it!"
+    
+    // for the alerts
+    enum AlertType { case miniature; case immersion }
+    @State var isShowingAlertMiniature = false
+    @State var isShowingAlertImemrsion = false
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -25,12 +36,21 @@ struct DescriptionView: View {
         }
         .ignoresSafeArea()
         .background(.thinMaterial)
+        
+        // add the alerts
+        .alert(miniatureInfoText, isPresented: $isShowingAlertMiniature) {
+            Button("OK", role: .cancel) {}
+        }
+        .alert(immersionInfoText, isPresented: $isShowingAlertImemrsion) {
+            Button("OK", role: .cancel) {}
+        }
+        
         // add the full screen covers only if we are using ARNavigationButtons
         .fullScreenCover(isPresented: $isShowingMiniAR) {
             ARNavigationDestination(mainView: MovableObjectARView(item: item), dismissState: 1)
         }
         .fullScreenCover(isPresented: $isShowingImmersionAR) {
-            ARNavigationDestination(mainView: TapToAppearViewContainer(item: item), dismissState: 2)
+            ARNavigationDestination(mainView: TapToAppearARView(item: item), dismissState: 2)
         }
     }
 }
@@ -54,13 +74,13 @@ extension DescriptionView {
             NavigationLink {
                 MovableObjectARView(item: item)
             } label: {
-                NavigationLinkLabelView("Play With Miniature 3D Space")
+                NavigationLinkLabelView(miniature3DText, .miniature)
             }
             
             NavigationLink {
-                TapToAppearViewContainer(item: item)
+                TapToAppearARView(item: item)
             } label: {
-                NavigationLinkLabelView("Immerse Youself in the 3D Space")
+                NavigationLinkLabelView(immersion3DText, .immersion)
             }
         }
     }
@@ -71,19 +91,19 @@ extension DescriptionView {
             Button {
                 self.isShowingMiniAR.toggle()
             } label: {
-                NavigationLinkLabelView("Play With Miniature 3D Space")
+                NavigationLinkLabelView(miniature3DText, .miniature)
             }
-
+            
             Button {
                 self.isShowingImmersionAR.toggle()
             } label: {
-                NavigationLinkLabelView("Immerse Youself in the 3D Space")
+                NavigationLinkLabelView(immersion3DText, .immersion)
             }
         }
     }
     
     // works in tandom with the buttons
-    // 1 refers to the miniature view and 2 refers to the immersion view 
+    // 1 refers to the miniature view and 2 refers to the immersion view
     func ARNavigationDestination(mainView: some View, dismissState: Int) -> some View {
         ZStack {
             ZStack {
@@ -99,14 +119,11 @@ extension DescriptionView {
                     }) {
                         Image(systemName: "xmark")
                             .font(.system(size: 40))
-                            .padding(.horizontal, 3)
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    .padding(.leading, 10)
                     .buttonStyle(.bordered)
-                    .buttonBorderShape(.capsule)
+                    .buttonBorderShape(.roundedRectangle)
                     .cornerRadius(20)
-//                    .tint(.black.opacity(1))
                     .padding()
                     .padding(.top, 10)
                 }
@@ -114,12 +131,29 @@ extension DescriptionView {
         }
     }
     
-    func NavigationLinkLabelView(_ text: String) -> some View {
-        Text(text)
-            .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 20)
-            .frame(height: 40)
-            .foregroundColor(.white)
-            .background(Color.black)
+    func NavigationLinkLabelView(_ text: String, _ alertType: AlertType) -> some View {
+        ZStack {
+            Text(text)
+                .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 20)
+                .frame(height: 40)
+                .foregroundColor(.white)
+                .background(Color.black)
+                .shadow(radius: 10)
+            
+            HStack {
+                Spacer()
+                Button {
+                    switch alertType {
+                    case .immersion: isShowingAlertImemrsion.toggle()
+                    case .miniature: isShowingAlertMiniature.toggle()
+                    }
+                } label: {
+                    Image(systemName: "info.circle.fill")
+                }
+            }
+            .padding(.trailing, 30)
+            
+        }
     }
     
     func titleSection() -> some View {
@@ -153,6 +187,14 @@ struct DescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             DescriptionView(item: presetViewableItems.first!)
+        }
+    }
+}
+struct DescriptionView_Previews2: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            DescriptionView(item: presetViewableItems.first!)
+                .NavigationLinkLabelView("hi", .miniature)
         }
     }
 }

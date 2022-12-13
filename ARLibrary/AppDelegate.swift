@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = TabNavigations()
-//        let contentView = TapToAppearARView()
+        // for quick testing purposes
+//        let contentView = ImmersionARFocusEntityView(item: presetViewableItems.first!)
+//        let contentView = QuickLookARView(item: presetViewableItems.first!)
 
         // Use a UIHostingController as window root view controller.
         let window = UIWindow(frame: UIScreen.main.bounds)

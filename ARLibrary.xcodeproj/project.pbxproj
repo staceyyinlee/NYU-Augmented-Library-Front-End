@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41283248294621720092406F /* ImmersionARFocusEntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41283247294621720092406F /* ImmersionARFocusEntityView.swift */; };
+		4128324B2946220D0092406F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 4128324A2946220D0092406F /* FocusEntity */; };
 		41ADFDF2294036700027DB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFDF1294036700027DB2C /* AppDelegate.swift */; };
 		41ADFDF4294036700027DB2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFDF3294036700027DB2C /* ContentView.swift */; };
 		41ADFDF6294036700027DB2C /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFDF5294036700027DB2C /* Experience.rcproject */; };
@@ -29,9 +31,12 @@
 		41EBF4BE2943F79E009F48EB /* TabNavigations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EBF4BD2943F79E009F48EB /* TabNavigations.swift */; };
 		41EBF4C02943F7FA009F48EB /* VIPTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EBF4BF2943F7FA009F48EB /* VIPTeamView.swift */; };
 		41EBF4C22943F926009F48EB /* VIPTeamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EBF4C12943F926009F48EB /* VIPTeamInfo.swift */; };
+		41EBF4C529453C0E009F48EB /* ARQuickLookViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EBF4C429453C0E009F48EB /* ARQuickLookViewUIKit.swift */; };
+		41EBF4C729453D6B009F48EB /* QuickLookARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EBF4C629453D6B009F48EB /* QuickLookARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41283247294621720092406F /* ImmersionARFocusEntityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersionARFocusEntityView.swift; sourceTree = "<group>"; };
 		41ADFDEE294036700027DB2C /* ARLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41ADFDF1294036700027DB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41ADFDF3294036700027DB2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +59,8 @@
 		41EBF4BD2943F79E009F48EB /* TabNavigations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigations.swift; sourceTree = "<group>"; };
 		41EBF4BF2943F7FA009F48EB /* VIPTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPTeamView.swift; sourceTree = "<group>"; };
 		41EBF4C12943F926009F48EB /* VIPTeamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPTeamInfo.swift; sourceTree = "<group>"; };
+		41EBF4C429453C0E009F48EB /* ARQuickLookViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookViewUIKit.swift; sourceTree = "<group>"; };
+		41EBF4C629453D6B009F48EB /* QuickLookARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4128324B2946220D0092406F /* FocusEntity in Frameworks */,
 				41ADFE03294036A20027DB2C /* FLAnimatedImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +134,9 @@
 			children = (
 				41ADFE14294118230027DB2C /* MovableObjectARViewContainer.swift */,
 				41EBF4B02943D4DE009F48EB /* TapToAppearARView.swift */,
+				41EBF4C629453D6B009F48EB /* QuickLookARView.swift */,
+				41283247294621720092406F /* ImmersionARFocusEntityView.swift */,
+				41EBF4C329453C00009F48EB /* Components */,
 			);
 			path = ARViewComponents;
 			sourceTree = "<group>";
@@ -160,6 +171,14 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		41EBF4C329453C00009F48EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				41EBF4C429453C0E009F48EB /* ARQuickLookViewUIKit.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +197,7 @@
 			name = ARLibrary;
 			packageProductDependencies = (
 				41ADFE02294036A20027DB2C /* FLAnimatedImage */,
+				4128324A2946220D0092406F /* FocusEntity */,
 			);
 			productName = ARLibrary;
 			productReference = 41ADFDEE294036700027DB2C /* ARLibrary.app */;
@@ -209,6 +229,7 @@
 			mainGroup = 41ADFDE5294036700027DB2C;
 			packageReferences = (
 				41ADFE01294036A20027DB2C /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
+				412832492946220D0092406F /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = 41ADFDEF294036700027DB2C /* Products */;
 			projectDirPath = "";
@@ -241,10 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EBF4C729453D6B009F48EB /* QuickLookARView.swift in Sources */,
 				41ADFE0C2940F3370027DB2C /* HomeNavigationButton.swift in Sources */,
 				41ADFDF4294036700027DB2C /* ContentView.swift in Sources */,
 				41ADFE052940E4320027DB2C /* GifView.swift in Sources */,
 				41ADFDF2294036700027DB2C /* AppDelegate.swift in Sources */,
+				41EBF4C529453C0E009F48EB /* ARQuickLookViewUIKit.swift in Sources */,
 				41ADFE0E2940F4220027DB2C /* HomeNavigationModel.swift in Sources */,
 				41EBF4C02943F7FA009F48EB /* VIPTeamView.swift in Sources */,
 				41EBF4BE2943F79E009F48EB /* TabNavigations.swift in Sources */,
@@ -253,6 +276,7 @@
 				41EBF4BC2943EAC7009F48EB /* DescriptionView.swift in Sources */,
 				41EBF4B12943D4DE009F48EB /* TapToAppearARView.swift in Sources */,
 				41ADFE102940FCC80027DB2C /* HomeNavigationModifiers.swift in Sources */,
+				41283248294621720092406F /* ImmersionARFocusEntityView.swift in Sources */,
 				41EBF4C22943F926009F48EB /* VIPTeamInfo.swift in Sources */,
 				41ADFDF6294036700027DB2C /* Experience.rcproject in Sources */,
 			);
@@ -391,9 +415,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,9 +446,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +485,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		412832492946220D0092406F /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		41ADFE01294036A20027DB2C /* XCRemoteSwiftPackageReference "FLAnimatedImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Flipboard/FLAnimatedImage";
@@ -474,6 +504,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4128324A2946220D0092406F /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 412832492946220D0092406F /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
 		41ADFE02294036A20027DB2C /* FLAnimatedImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 41ADFE01294036A20027DB2C /* XCRemoteSwiftPackageReference "FLAnimatedImage" */;

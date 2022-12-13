@@ -20,7 +20,7 @@ struct HomeNavigationButton: View {
             Text(item.displayText)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 16))
-
+                .foregroundColor(textColor)
         }
     }
 }

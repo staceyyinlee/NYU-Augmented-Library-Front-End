@@ -8,6 +8,8 @@
 import SwiftUI
 import RealityKit
 
+let textColor = Color("AccentColor")
+
 struct ContentView : View {
     var body: some View {
         return ARViewContainer().edgesIgnoringSafeArea(.all)

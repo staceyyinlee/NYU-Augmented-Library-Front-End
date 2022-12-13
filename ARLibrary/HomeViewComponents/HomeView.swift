@@ -57,7 +57,7 @@ extension HomeView {
             .font(.title)
             .bold()
             .multilineTextAlignment(.center)
-            .foregroundColor(.black)
+            .foregroundColor(textColor)
     }
     
     func TorchGIFView() -> some View {

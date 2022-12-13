@@ -1,38 +1,31 @@
 //
-//  TapToAppearARView.swift
+//  ImmersionARFocusEntityView.swift
 //  ARLibrary
 //
-//  Created by Brayton Lordianto on 12/9/22.
+//  Created by Brayton Lordianto on 12/11/22.
 //
 
 import SwiftUI
 import ARKit
 import RealityKit
 import Combine
+import FocusEntity
 
-struct TapToAppearARView: View {
+// MARK: THIS IS AN ALTERNATIVE TO THE TAPTOAPPEARARVIEW 
+struct ImmersionARFocusEntityView: View {
     let item: ViewableSpaceItem
     @State var isShowingAlert = false
     let errorMessage = "We weren't able to detect a horizontal plane. Please try to get closer to the floor and click on it."
 
     var body: some View {
         ZStack {
-            TapToAppearViewContainer(item: item, showingAlert: $isShowingAlert)
+            ImmersionARFocusEntityContainer(item: item, showingAlert: $isShowingAlert)
                 .ignoresSafeArea()
-            
-            // ERROR: adding an alert is changing the camera in a weird orientation and leading to bugs 
-//            Text("")
-//                .alert(errorMessage, isPresented: $isShowingAlert) {
-//                    Button("OK", role: .cancel) {
-//                        guard let action = refreshAction else { return }
-//                        Task { await action() }
-//                    }
-//                }
         }
     }
 }
 
-struct TapToAppearViewContainer: UIViewRepresentable {
+struct ImmersionARFocusEntityContainer: UIViewRepresentable {
     let item: ViewableSpaceItem
     var showingAlert: Binding<Bool>
     let anchor = AnchorEntity()
@@ -54,6 +47,10 @@ struct TapToAppearViewContainer: UIViewRepresentable {
             )
         )
         
+        // 4. Set up environments
+        arView.environment.sceneUnderstanding.options = .occlusion
+        arView.environment.sceneUnderstanding.options = .receivesLighting
+        
         arView.scene.anchors.append(anchor)
         return arView
     }
@@ -74,17 +71,26 @@ struct TapToAppearViewContainer: UIViewRepresentable {
     }
 }
 
-extension TapToAppearViewContainer {
+extension ImmersionARFocusEntityContainer {
     class Coordinator: NSObject, ARSessionDelegate {
         weak var view: ARView?
         let item: ViewableSpaceItem
         var rendered = false
         var showingAlert: Binding<Bool>
-        
+        var focusEntity: FocusEntity?
         
         init(item: ViewableSpaceItem, showingAlert: Binding<Bool>) {
             self.item = item
             self.showingAlert = showingAlert
+        }
+        
+        func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+            guard let view = self.view else { return }
+            debugPrint("Anchors added to the scene: ", anchors)
+            // use the focus entity dependency
+            if !rendered {
+                self.focusEntity = FocusEntity(on: view, style: .classic(color: .yellow))
+            }
         }
         
         @objc
@@ -106,11 +112,19 @@ extension TapToAppearViewContainer {
                 // 3D point
                 let pos = simd_make_float3(result.worldTransform.columns.3)
                 
+                // delete the green focus entity square
+                let position = focusEntity!.position
+                self.focusEntity?.destroy()
+                self.view?.scene.anchors.removeAll()
+
                 // place the object
-                placeObjectAsync(view: view, pos)
+                // placeObjectAsync(view: view, pos)
+                // alternatively, place the object based on the focus entity
+                placeObjectAsync(view: view, position)
                 
                 // ensure it will only render once
                 rendered = true
+                
             } else {
                 // make an alert that it did not work the first time, so tap again.
                 showingAlert.wrappedValue.toggle()
@@ -134,11 +148,5 @@ extension TapToAppearViewContainer {
             }
         }
         
-    }
-}
-
-struct TapToAppearARView_Previews: PreviewProvider {
-    static var previews: some View {
-        TapToAppearARView(item: presetViewableItems.first!)
     }
 }
