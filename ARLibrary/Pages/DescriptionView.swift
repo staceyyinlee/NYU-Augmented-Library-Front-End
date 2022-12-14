@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DescriptionView: View {
+    
     let item: ViewableSpaceItem
     @State var isShowingMiniAR = false
     @State var isShowingImmersionAR = false
@@ -50,7 +51,8 @@ struct DescriptionView: View {
             ARNavigationDestination(mainView: MovableObjectARView(item: item), dismissState: 1)
         }
         .fullScreenCover(isPresented: $isShowingImmersionAR) {
-            ARNavigationDestination(mainView: TapToAppearARView(item: item), dismissState: 2)
+            ARNavigationDestination(mainView: ImmersionARFocusEntityView(item: item), dismissState: 2)
+            
         }
     }
 }
@@ -88,8 +90,7 @@ extension DescriptionView {
     // alternative to the 'ARNavigationLinks' view
     func ARNavigationButtons() -> some View {
         VStack {
-            Button {
-                self.isShowingMiniAR.toggle()
+            Button {                self.isShowingMiniAR.toggle()
             } label: {
                 NavigationLinkLabelView(miniature3DText, .miniature)
             }
