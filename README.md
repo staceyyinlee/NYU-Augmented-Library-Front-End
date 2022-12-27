@@ -11,6 +11,36 @@ This is the open-source repository of the app ``3Dibner`` that is downloadable i
 ### Documentation Quick Access
 
 
+
+* [Screenshots and Frontend Code Files](https://github.com/staceyyinlee/NYU-Augmented-Library-Front-End/blob/main/ARLibrary/)
+
+
+### Usage
+
+To run this app locally, follow these steps:
+
+
+
+1. Requirements 
+* MacOS Catalina and Above
+* Install XCode 13+
+* iOS 15+
+2. Instructions
+* Clone the repository on XCode
+
+`https://github.com/staceyyinlee/NYU-Augmented-Library-Front-End`
+
+
+
+* Change the Bundle Identifier and Developer Team to that corresponding of your Apple ID. 
+
+Learn more: [Helper Link 1](https://developer.school/snippets/ios/how-to-change-the-bundle-identifier-in-xcode), [Helper Link 2](https://docs.tibco.com/pub/spotfire_deployment_kit_apple_ipad/2.7.1/doc/html/GUID-548CF68B-2CD0-4A6A-97CF-AB3284107011.html#:~:text=Click%20Xcode%20%3E%20Preferences%20%3E%20Accounts.,associated%20with%20the%20Apple%20ID.)
+
+
+
+* Run the app with an iOS device. 
+
+
 ### App Store Description
 
 Enhance your NYU Dibner Library experience and preview the different study rooms available in Dibner Library through augmented reality. Reserve rooms quickly and easily.
