@@ -76,6 +76,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4172DC7E295BC34000D055E2 /* InProg Files */ = {
+			isa = PBXGroup;
+			children = (
+				41EBF4B02943D4DE009F48EB /* TapToAppearARView.swift */,
+				41EBF4C629453D6B009F48EB /* QuickLookARView.swift */,
+				41EBF4C12943F926009F48EB /* VIPTeamInfo.swift */,
+				41EBF4C329453C00009F48EB /* Components */,
+			);
+			path = "InProg Files";
+			sourceTree = "<group>";
+		};
 		41ADFDE5294036700027DB2C = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +114,7 @@
 				41ADFDF5294036700027DB2C /* Experience.rcproject */,
 				41EBF4BA2943EAAD009F48EB /* Pages */,
 				41ADFDF7294036710027DB2C /* Assets.xcassets */,
+				4172DC7E295BC34000D055E2 /* InProg Files */,
 				41ADFE1629413E400027DB2C /* 3D Models */,
 				41ADFE062940E7EB0027DB2C /* nyu_torch.gif */,
 				41ADFDF9294036710027DB2C /* Preview Content */,
@@ -133,10 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				41ADFE14294118230027DB2C /* MovableObjectARViewContainer.swift */,
-				41EBF4B02943D4DE009F48EB /* TapToAppearARView.swift */,
-				41EBF4C629453D6B009F48EB /* QuickLookARView.swift */,
 				41283247294621720092406F /* ImmersionARFocusEntityView.swift */,
-				41EBF4C329453C00009F48EB /* Components */,
 			);
 			path = ARViewComponents;
 			sourceTree = "<group>";
@@ -156,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				41ADFE0D2940F4220027DB2C /* HomeNavigationModel.swift */,
-				41EBF4C12943F926009F48EB /* VIPTeamInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

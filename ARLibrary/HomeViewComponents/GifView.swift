@@ -85,8 +85,7 @@ struct GIFView: UIViewRepresentable {
                     imageView.animatedImage = image
                     
                     // this is a special work around for the specifications of the current GIF to run forever
-                    var timer = Timer()
-                    timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { _ in
+                    Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { _ in
                         imageView.animatedImage = nil
                         imageView.animatedImage = image
                     })

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// keep for scaling VIP info in the future. 
 let VIPTeamInfo: [String:String] = [
     :
 ]
