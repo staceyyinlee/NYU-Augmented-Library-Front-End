@@ -87,6 +87,14 @@
 			path = "InProg Files";
 			sourceTree = "<group>";
 		};
+		4172DC80295BC75300D055E2 /* GIF Assets */ = {
+			isa = PBXGroup;
+			children = (
+				41ADFE062940E7EB0027DB2C /* nyu_torch.gif */,
+			);
+			path = "GIF Assets";
+			sourceTree = "<group>";
+		};
 		41ADFDE5294036700027DB2C = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +122,9 @@
 				41ADFDF5294036700027DB2C /* Experience.rcproject */,
 				41EBF4BA2943EAAD009F48EB /* Pages */,
 				41ADFDF7294036710027DB2C /* Assets.xcassets */,
+				4172DC80295BC75300D055E2 /* GIF Assets */,
 				4172DC7E295BC34000D055E2 /* InProg Files */,
-				41ADFE1629413E400027DB2C /* 3D Models */,
-				41ADFE062940E7EB0027DB2C /* nyu_torch.gif */,
+				41ADFE1629413E400027DB2C /* 3D Assets */,
 				41ADFDF9294036710027DB2C /* Preview Content */,
 			);
 			path = ARLibrary;
@@ -150,7 +158,7 @@
 			path = ARViewComponents;
 			sourceTree = "<group>";
 		};
-		41ADFE1629413E400027DB2C /* 3D Models */ = {
+		41ADFE1629413E400027DB2C /* 3D Assets */ = {
 			isa = PBXGroup;
 			children = (
 				41EBF4B62943EA21009F48EB /* individual_room.usdz */,
@@ -158,7 +166,7 @@
 				41EBF4B52943EA21009F48EB /* four_people_room.usdz */,
 				41ADFE1729413F260027DB2C /* computer_lab.usdz */,
 			);
-			path = "3D Models";
+			path = "3D Assets";
 			sourceTree = "<group>";
 		};
 		41EBF4B32943E22D009F48EB /* Model */ = {
