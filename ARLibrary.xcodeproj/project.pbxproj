@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		41283248294621720092406F /* ImmersionARFocusEntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41283247294621720092406F /* ImmersionARFocusEntityView.swift */; };
 		4128324B2946220D0092406F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 4128324A2946220D0092406F /* FocusEntity */; };
+		4172DC8C295BE5B600D055E2 /* EchoModel_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172DC88295BE5B600D055E2 /* EchoModel_.swift */; };
+		4172DC8D295BE5B600D055E2 /* Echo3D_API_Integration_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172DC89295BE5B600D055E2 /* Echo3D_API_Integration_.swift */; };
+		4172DC8E295BE5B600D055E2 /* Echo3DUsdzFileManager_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172DC8A295BE5B600D055E2 /* Echo3DUsdzFileManager_.swift */; };
+		4172DC8F295BE5B600D055E2 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172DC8B295BE5B600D055E2 /* ARViewModel.swift */; };
 		41ADFDF2294036700027DB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFDF1294036700027DB2C /* AppDelegate.swift */; };
 		41ADFDF4294036700027DB2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFDF3294036700027DB2C /* ContentView.swift */; };
 		41ADFDF6294036700027DB2C /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFDF5294036700027DB2C /* Experience.rcproject */; };
@@ -22,7 +26,6 @@
 		41ADFE102940FCC80027DB2C /* HomeNavigationModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFE0F2940FCC80027DB2C /* HomeNavigationModifiers.swift */; };
 		41ADFE122940FE300027DB2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFE112940FE300027DB2C /* HomeView.swift */; };
 		41ADFE15294118230027DB2C /* MovableObjectARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ADFE14294118230027DB2C /* MovableObjectARViewContainer.swift */; };
-		41ADFE1829413F260027DB2C /* computer_lab.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41ADFE1729413F260027DB2C /* computer_lab.usdz */; };
 		41EBF4B12943D4DE009F48EB /* TapToAppearARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EBF4B02943D4DE009F48EB /* TapToAppearARView.swift */; };
 		41EBF4B72943EA21009F48EB /* eight_people_room.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41EBF4B42943EA21009F48EB /* eight_people_room.usdz */; };
 		41EBF4B82943EA21009F48EB /* four_people_room.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41EBF4B52943EA21009F48EB /* four_people_room.usdz */; };
@@ -37,6 +40,10 @@
 
 /* Begin PBXFileReference section */
 		41283247294621720092406F /* ImmersionARFocusEntityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersionARFocusEntityView.swift; sourceTree = "<group>"; };
+		4172DC88295BE5B600D055E2 /* EchoModel_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoModel_.swift; sourceTree = "<group>"; };
+		4172DC89295BE5B600D055E2 /* Echo3D_API_Integration_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Echo3D_API_Integration_.swift; sourceTree = "<group>"; };
+		4172DC8A295BE5B600D055E2 /* Echo3DUsdzFileManager_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Echo3DUsdzFileManager_.swift; sourceTree = "<group>"; };
+		4172DC8B295BE5B600D055E2 /* ARViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		41ADFDEE294036700027DB2C /* ARLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41ADFDF1294036700027DB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41ADFDF3294036700027DB2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +57,6 @@
 		41ADFE0F2940FCC80027DB2C /* HomeNavigationModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationModifiers.swift; sourceTree = "<group>"; };
 		41ADFE112940FE300027DB2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		41ADFE14294118230027DB2C /* MovableObjectARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableObjectARViewContainer.swift; sourceTree = "<group>"; };
-		41ADFE1729413F260027DB2C /* computer_lab.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = computer_lab.usdz; sourceTree = "<group>"; };
 		41EBF4B02943D4DE009F48EB /* TapToAppearARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToAppearARView.swift; sourceTree = "<group>"; };
 		41EBF4B42943EA21009F48EB /* eight_people_room.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = eight_people_room.usdz; sourceTree = "<group>"; };
 		41EBF4B52943EA21009F48EB /* four_people_room.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = four_people_room.usdz; sourceTree = "<group>"; };
@@ -95,6 +101,17 @@
 			path = "GIF Assets";
 			sourceTree = "<group>";
 		};
+		4172DC81295BC7F600D055E2 /* Echo3D_Files */ = {
+			isa = PBXGroup;
+			children = (
+				4172DC8B295BE5B600D055E2 /* ARViewModel.swift */,
+				4172DC89295BE5B600D055E2 /* Echo3D_API_Integration_.swift */,
+				4172DC8A295BE5B600D055E2 /* Echo3DUsdzFileManager_.swift */,
+				4172DC88295BE5B600D055E2 /* EchoModel_.swift */,
+			);
+			path = Echo3D_Files;
+			sourceTree = "<group>";
+		};
 		41ADFDE5294036700027DB2C = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +133,7 @@
 			children = (
 				41ADFDF1294036700027DB2C /* AppDelegate.swift */,
 				41ADFDF3294036700027DB2C /* ContentView.swift */,
+				4172DC81295BC7F600D055E2 /* Echo3D_Files */,
 				41EBF4B32943E22D009F48EB /* Model */,
 				41ADFE13294118040027DB2C /* ARViewComponents */,
 				41ADFE0A2940F21D0027DB2C /* HomeViewComponents */,
@@ -164,7 +182,6 @@
 				41EBF4B62943EA21009F48EB /* individual_room.usdz */,
 				41EBF4B42943EA21009F48EB /* eight_people_room.usdz */,
 				41EBF4B52943EA21009F48EB /* four_people_room.usdz */,
-				41ADFE1729413F260027DB2C /* computer_lab.usdz */,
 			);
 			path = "3D Assets";
 			sourceTree = "<group>";
@@ -266,7 +283,6 @@
 				41EBF4B92943EA21009F48EB /* individual_room.usdz in Resources */,
 				41EBF4B72943EA21009F48EB /* eight_people_room.usdz in Resources */,
 				41ADFDF8294036710027DB2C /* Assets.xcassets in Resources */,
-				41ADFE1829413F260027DB2C /* computer_lab.usdz in Resources */,
 				41EBF4B82943EA21009F48EB /* four_people_room.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4172DC8D295BE5B600D055E2 /* Echo3D_API_Integration_.swift in Sources */,
 				41EBF4C729453D6B009F48EB /* QuickLookARView.swift in Sources */,
 				41ADFE0C2940F3370027DB2C /* HomeNavigationButton.swift in Sources */,
+				4172DC8F295BE5B600D055E2 /* ARViewModel.swift in Sources */,
 				41ADFDF4294036700027DB2C /* ContentView.swift in Sources */,
 				41ADFE052940E4320027DB2C /* GifView.swift in Sources */,
 				41ADFDF2294036700027DB2C /* AppDelegate.swift in Sources */,
@@ -294,6 +312,8 @@
 				41ADFE102940FCC80027DB2C /* HomeNavigationModifiers.swift in Sources */,
 				41283248294621720092406F /* ImmersionARFocusEntityView.swift in Sources */,
 				41EBF4C22943F926009F48EB /* VIPTeamInfo.swift in Sources */,
+				4172DC8C295BE5B600D055E2 /* EchoModel_.swift in Sources */,
+				4172DC8E295BE5B600D055E2 /* Echo3DUsdzFileManager_.swift in Sources */,
 				41ADFDF6294036700027DB2C /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

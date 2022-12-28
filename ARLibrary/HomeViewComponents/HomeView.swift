@@ -40,6 +40,12 @@ struct HomeView: View {
                 .ignoresSafeArea()
             }
         }
+        .onAppear {
+            DispatchQueue.main.async {
+                // just call the initializer
+                ViewModel.init()
+            }
+        }
     }
 }
 

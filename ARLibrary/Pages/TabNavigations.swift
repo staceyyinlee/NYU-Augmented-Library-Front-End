@@ -8,10 +8,6 @@
 import SwiftUI
 
 struct TabNavigations: View {
-    init() {
-//        UITabBar.appearance().tintColor = UIColor(named: "NYU_purple")
-        UITabBar.appearance().tintColor = UIColor(named: "red")
-    }
     var body: some View {
         TabView {
             HomeView()
@@ -25,9 +21,6 @@ struct TabNavigations: View {
                     Image(systemName: "person")
                 }
             
-        }
-        .onAppear {
-            UITabBar.appearance().tintColor = UIColor(named: "NYU_purple")
         }
     }
 }

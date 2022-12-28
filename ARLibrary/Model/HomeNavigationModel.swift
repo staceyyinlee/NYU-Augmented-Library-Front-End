@@ -17,7 +17,8 @@ struct ViewableSpaceItem: Hashable {
     init(displayText: String, associatedImageName: String, _ associatedModelName: String? = nil, description: String = "", reserveURL: String = "") {
         self.displayText = displayText
         self.associatedImageName = associatedImageName
-        self.associatedModelName = (associatedModelName ?? associatedImageName) + ".usdz"
+//        self.associatedModelName = (associatedModelName ?? associatedImageName) + ".usdz"
+        self.associatedModelName = (associatedModelName ?? associatedImageName)
         self.description = description
         self.reserveURL = reserveURL
     }
