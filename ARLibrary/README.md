@@ -40,6 +40,8 @@ Files: [Here](https://github.com/staceyyinlee/NYU-Augmented-Library-Front-End/bl
 #### Miniature Augmented Reality Page
 
 ![Gif 4](https://media3.giphy.com/media/VnoF8horHTDQs5x2eV/giphy.gif)
+<img src="https://media3.giphy.com/media/VnoF8horHTDQs5x2eV/giphy.gif">
+[Screenshot](https://media3.giphy.com/media/VnoF8horHTDQs5x2eV/giphy.gif)
 
 Given a certain room, the user can see a draggable, movable, and miniaturized 3D model of the room. 
 
@@ -49,6 +51,7 @@ Files: [Here](https://github.com/staceyyinlee/NYU-Augmented-Library-Front-End/bl
 #### Immersion Augmented Reality Page
 
 ![Gif 4](https://media3.giphy.com/media/V9QxQS3rIJlC1PmevA/giphy.gif)
+[Screenshot](https://media3.giphy.com/media/V9QxQS3rIJlC1PmevA/giphy.gif)
 
 Upon opening the page, the user will see a green box that generates focus on the screen. The user will tap on the screen when they have indicated the floor of their room based on the green box. Then the green box will disappear, and a 3D model of the selected room will appear in the location of the green box, enlarged. The user can immerse themselves in the room. 
 
